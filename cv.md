@@ -42,3 +42,5 @@ Interaction with databases
 *2019 - 2021:* **HARBIN INSTITUTE OF TECHNOLOGY, CHINA**, Аpplied economics
 
 *2011 - 2016:* **BELARUSIAN-RUSSIAN UNIVERSITY**, Automotive industry
+### LANGUAGES
+English: pre-intermediate (in progress)
