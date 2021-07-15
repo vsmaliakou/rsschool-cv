@@ -13,3 +13,10 @@ I have experience building an application using React with TypeScript. Now I am 
 - HTML / CSS / SCSS
 - AXIOS / REST API / Firebase
 - Material UI / Ant Design
+### SAMPLE CODE
+```javascript
+function sumTo(n){
+	if(n == 1) return 1;
+    return n + sumTo(n - 1)
+}
+```
