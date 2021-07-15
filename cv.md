@@ -21,7 +21,7 @@ function sumTo(n){
 }
 ```
 ### EXPERIENCE
-*jun 2021 - pr.time:* **FRONT-END DEVELOPER, FREELANCE**
+*jan 2021 - pr.time:* **FRONT-END DEVELOPER, FREELANCE**
 
 Creating apps using React, redux, react-redux, react-router-dom, redux-thunk, axios, Formik, MaterialUI, SCSS. Work with HOC, Hook, TypeScript. Refactoring, bug fixing, checking the correctness of the code with Unit Tests and using of Storybook for demonstration of individual modules of the application.
 
@@ -34,3 +34,11 @@ official website of the educational institution
 *2016 - 2019:* **INFORMATION CENTER OFFICER**
 
 Interaction with databases
+### EDUCATION
+*july 2021 - pr.time:* **The Rolling Scopes School**, JS / Front-end
+
+*jan - june 2021:* **IT-INCUBATOR**, Front-end
+
+*2019 - 2021:* **HARBIN INSTITUTE OF TECHNOLOGY, CHINA**, Аpplied economics
+
+*2011 - 2016:* **BELARUSIAN-RUSSIAN UNIVERSITY**, Automotive industry
