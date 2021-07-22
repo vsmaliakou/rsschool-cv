@@ -78,7 +78,9 @@ header img {
   font-weight: 700;
 }
 section {
-  padding: 20px 5px 20px 40px;
+  padding-top: 20px;
+  padding-right: 5px;
+  padding-left: 40px;
 }
 .column-one {
   width: 400px;
@@ -93,4 +95,8 @@ section {
   .column-one {
     width: 100%;
   }
+}
+.contact {
+  border-top: 3px solid rgb(63, 57, 57);
+  border-bottom: 3px solid rgb(63, 57, 57);
 }
