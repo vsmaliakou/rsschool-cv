@@ -100,3 +100,16 @@ section {
   border-top: 3px solid rgb(63, 57, 57);
   border-bottom: 3px solid rgb(63, 57, 57);
 }
+.skills {
+  border-bottom: 3px solid rgb(63, 57, 57);
+}
+.code {
+  background-color: silver;
+  padding: 30px;
+  border-radius: 5px;
+  font-size: 17px;
+}
+.application {
+  display: block;
+  margin: 30px;
+}
