@@ -1,48 +1,41 @@
 body {
   font-family: "Poppins", sans-serif;
-  background-color: rgb(253, 250, 253);
   color: rgb(63, 57, 57);
+  background-color: rgb(253, 250, 253);
 }
 .content {
   position: relative;
   margin: auto 200px;
-  background: white;
+  background-color: white;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 header {
+  padding: 50px 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px 50px;
 }
-.title {
-  z-index: 99999;
-}
+.title { z-index: 2; }
 .title h1,
-h3 {
+.title h3 {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 200;
   letter-spacing: 3px;
   color: white;
-  margin-top: 0;
-  margin-bottom: 0;
 }
-header img {
-  z-index: 9999;
-}
-
+header img { z-index: 2; }
 .background {
   position: absolute;
   top: 100px;
   left: 0;
-  background-color: rgb(63, 57, 57);
   width: 70%;
   height: 480px;
+  background-color: rgb(63, 57, 57);
 }
 
 @media screen and (max-width: 1250px) {
-  header {
-    flex-direction: column;
-  }
+  header { flex-direction: column; }
   .background {
     top: 0;
     width: 100%;
@@ -50,65 +43,44 @@ header img {
   }
 }
 @media screen and (max-width: 1000px) {
-  .content {
-    margin: auto;
-  }
+  .content { margin: auto; }
 }
 @media screen and (max-width: 480px) {
-  header {
-    padding: 50px 0;
-  }
-  header img {
-    width: 300px;
-  }
+  header { padding: 50px 0; }
+  header img { width: 300px; }
   .title h1,
-  h3 {
-    color: rgb(63, 57, 57);
+  .title h3 {
     font-size: 20px;
+    color: rgb(63, 57, 57);
   }
-  .background {
-    display: none;
-  }
+  .background { display: none; }
 }
-.main {
-  display: flex;
-}
+.main { display: flex; }
 .main h3 {
-  color: rgb(63, 57, 57);
   font-weight: 700;
+  letter-spacing: 3px;
+  color: rgb(63, 57, 57);
 }
 section {
   padding-top: 20px;
   padding-right: 5px;
   padding-left: 40px;
 }
-.column-one {
-  width: 400px;
-}
-.column-two {
-  flex: 1;
-}
+.column-one { width: 400px; }
+.column-two { flex: 1; }
 @media screen and (max-width: 1100px) {
-  .column-one {
-    width: 300px;
-  }
+  .column-one { width: 300px; }
 }
 @media screen and (max-width: 750px) {
-  .main {
-    flex-wrap: wrap;
-  }
-  .column-one {
-    width: 100%;
-  }
+  .main { flex-wrap: wrap; }
+  .column-one { width: 100%; }
 }
-.column-one section {
-  border-bottom: 3px solid rgb(63, 57, 57);
-}
+.column-one section { border-bottom: 3px solid rgb(63, 57, 57); }
 .code {
-  background-color: silver;
   padding: 30px;
-  border-radius: 5px;
   font-size: 17px;
+  background-color: silver;
+  border-radius: 5px;
 }
 .application {
   display: block;
@@ -117,19 +89,15 @@ section {
 .section-title::after {
   content: "";
   display: block;
-  border-bottom: 3px solid rgb(63, 57, 57);
   width: 100%;
+  border-bottom: 3px solid rgb(63, 57, 57);
 }
 .date {
-  color: silver;
   margin-right: 10px;
+  color: silver;
 }
-section h4 {
-  margin-bottom: 0;
-}
-.description {
-  margin-top: 5px;
-}
+section h4 { margin-bottom: 0; }
+.description { margin-top: 5px; }
 footer {
   background-color: rgb(63, 57, 57);
   color: white;
