@@ -89,10 +89,10 @@ section {
   flex: 1;
 }
 @media screen and (max-width: 1100px) {
-    .column-one {
-      width: 300px;
-    }
+  .column-one {
+    width: 300px;
   }
+}
 @media screen and (max-width: 750px) {
   .main {
     flex-wrap: wrap;
@@ -101,11 +101,7 @@ section {
     width: 100%;
   }
 }
-.contact {
-  border-top: 3px solid rgb(63, 57, 57);
-  border-bottom: 3px solid rgb(63, 57, 57);
-}
-.skills {
+.column-one section {
   border-bottom: 3px solid rgb(63, 57, 57);
 }
 .code {
@@ -129,9 +125,26 @@ section {
   margin-right: 10px;
 }
 section h4 {
-    margin-bottom: 0;
-  }
+  margin-bottom: 0;
+}
 .description {
   margin-top: 5px;
 }
-
+footer {
+  background-color: rgb(63, 57, 57);
+  color: white;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+.ghlogo {
+  width: 36px;
+  margin: 10px;
+}
+.logo {
+  width: 64px;
+  margin: 10px;
+}
