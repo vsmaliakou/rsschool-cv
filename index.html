@@ -10,6 +10,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
     <title>Smaliakou Vitali</title>
   </head>
   <body>
@@ -19,7 +27,9 @@
           <h1><strong>VITALI</strong> SMALIAKOU</h1>
           <h3>FRONT-END DEVELOPER</h3>
         </div>
-        <img src="photo400px.jpg" alt="photo" />
+        <figure>
+          <img src="assets/images/photo400px.jpg" alt="photo" />
+        </figure>
         <div class="background"></div>
       </header>
       <main class="main">
@@ -54,13 +64,31 @@
           </section>
           <section>
             <h3>CODE</h3>
-            <a class="application" href="https://vsmaliakou.github.io/friday"
-              >Application Cards</a
-            >
+            <pre>
+              <code class="js">
+       function OrderPeople (people){
+         return people.sort( (a, b) => {
+           if (a.age > b.age) return 1;
+           if (a.age == b.age) return 0;
+           if (a.age &lt; b.age) return -1;
+         });
+       }
+              </code>
+            </pre>
           </section>
           <section>
-            <h3>LANGUAGES</h3>
-            <p>English: pre-intermediate (in progress)</p>
+            <h3>PROJECTS</h3>
+            <div>
+              <a href="https://rolling-scopes-school.github.io/vsmaliakou-JSFEPRESCHOOL/museum/" target="_blank">
+                <img class="project-image" src="assets/images/museum.jpg" alt="museum" />
+              </a>
+              <a href="https://rolling-scopes-school.github.io/vsmaliakou-JSFEPRESCHOOL/drum-kit/" target="_blank">
+                <img class="project-image" src="assets/images/drum.jpg" alt="drum-kit" />
+              </a>
+              <a href="https://rolling-scopes-school.github.io/vsmaliakou-JSFEPRESCHOOL/photofilter/" target="_blank">
+                <img class="project-image" src="assets/images/photofilter.jpg" alt="photofilter" />
+              </a>
+            </div>
           </section>
         </div>
         <div class="column-two">
@@ -68,8 +96,7 @@
             <h3 class="section-title">EXPERIENCE</h3>
             <article>
               <h4>
-                <span class="date">01.2021 - pr.time</span>FRONT-END DEVELOPER,
-                FREELANCE
+                <span class="date">01.2021 - pr.time</span>FRONT-END DEVELOPER, FREELANCE
               </h4>
               <p class="description">
                 Creating apps using React, redux, react-redux, react-router-dom,
@@ -81,8 +108,7 @@
             </article>
             <article>
               <h4>
-                <span class="date">01 - 08.2021</span>SOFTWARE ENGINEER,
-                TEACHERS COLLEGE
+                <span class="date">01 - 08.2021</span>SOFTWARE ENGINEER, TEACHERS COLLEGE
               </h4>
               <p class="description">
                 Maintenance of the implementation of programs and software
@@ -101,14 +127,10 @@
             <h3 class="section-title">EDUCATION</h3>
             <article>
               <h4>
-                <span class="date">07.2021 - pr.time</span>The Rolling Scopes
-                School
+                <span class="date">07.2021 - pr.time</span>The Rolling Scopes School
               </h4>
               <p class="description">
-                JS / Front-end (<a
-                  href="https://app.rs.school/certificate/aanlvamh"
-                  >Certificate</a
-                >)
+                JS / Front-end (<a href="https://app.rs.school/certificate/aanlvamh">Certificate</a>)
               </p>
             </article>
             <article>
@@ -117,34 +139,32 @@
             </article>
             <article>
               <h4>
-                <span class="date">2019 - 2021</span>HARBIN INSTITUTE OF
-                TECHNOLOGY, CHINA
-              </h4>
+                <span class="date">2019 - 2021</span>HARBIN INSTITUTE OF TECHNOLOGY, CHINA</h4>
               <p class="description">Аpplied economics</p>
             </article>
             <article>
               <h4>
-                <span class="date">2011 - 2016</span>BELARUSIAN-RUSSIAN
-                UNIVERSITY
+                <span class="date">2011 - 2016</span>BELARUSIAN-RUSSIAN UNIVERSITY
               </h4>
               <p class="description">Automotive industry</p>
             </article>
+          </section>
+          <section>
+            <h3 class="section-title">LANGUAGES</h3>
+            <p>English: pre-intermediate (in progress)</p>
           </section>
         </div>
       </main>
       <footer class="footer">
         2021
-        <div>
-          <a href="https://github.com/vsmaliakou"
-            ><img class="ghlogo" src="github-logo.png" alt="github logo"
-          /></a>
-          <a href="https://rs.school/js/"
-            ><img
-              class="rsslogo"
-              src="https://rs.school/images/rs_school_js.svg"
-              alt="rsschool logo"
-          /></a>
-        </div>
+        <nav>
+          <a href="https://github.com/vsmaliakou">
+            <img class="ghlogo" src="github-logo.png" alt="github logo"/>
+          </a>
+          <a href="https://rs.school/js/">
+            <img class="rsslogo" src="https://rs.school/images/rs_school_js.svg" alt="rsschool logo"/>
+          </a>
+        </nav>
       </footer>
     </div>
   </body>
