@@ -31,10 +31,23 @@
           <img src="assets/images/photo400px.jpg" alt="photo" />
         </figure>
         <div class="background"></div>
+        <div class="burger-button" onclick="myFunction()"></div>
+        <nav class="burger-menu" id="burger-menu">
+          <ul>
+            <li><a href="#aboutMyself">About Myself</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#code">Code</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#languages">Languages</a></li>
+          </ul>
+        </nav>
       </header>
       <main class="main">
         <div class="column-one">
-          <section>
+          <section id="aboutMyself">
             <h3>ABOUT MYSELF</h3>
             <p>
               I have experience building an application using React with
@@ -43,7 +56,7 @@
               the future I see myself as a Full Stack developer
             </p>
           </section>
-          <section class="contact">
+          <section class="contact" id="contact">
             <h3>CONTACT INFO</h3>
             <ul>
               <li>+375292700376</li>
@@ -52,7 +65,7 @@
               <li>Belarus, Rahachow</li>
             </ul>
           </section>
-          <section class="skills">
+          <section class="skills" id="skills">
             <h3>SKILLS</h3>
             <ul>
               <li>React / Redux</li>
@@ -62,7 +75,7 @@
               <li>Material UI / Ant Design</li>
             </ul>
           </section>
-          <section>
+          <section id="code">
             <h3>CODE</h3>
             <pre>
               <code class="js">
@@ -76,7 +89,7 @@
               </code>
             </pre>
           </section>
-          <section>
+          <section id="projects">
             <h3>PROJECTS</h3>
             <div>
               <a href="https://rolling-scopes-school.github.io/vsmaliakou-JSFEPRESCHOOL/museum/" target="_blank">
@@ -92,7 +105,7 @@
           </section>
         </div>
         <div class="column-two">
-          <section>
+          <section id="experience">
             <h3 class="section-title">EXPERIENCE</h3>
             <article>
               <h4>
@@ -123,7 +136,7 @@
               <p class="description">Interaction with databases</p>
             </article>
           </section>
-          <section>
+          <section id="education">
             <h3 class="section-title">EDUCATION</h3>
             <article>
               <h4>
@@ -149,7 +162,7 @@
               <p class="description">Automotive industry</p>
             </article>
           </section>
-          <section>
+          <section id="languages">
             <h3 class="section-title">LANGUAGES</h3>
             <p>English: pre-intermediate (in progress)</p>
           </section>
@@ -167,5 +180,15 @@
         </nav>
       </footer>
     </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("burger-menu");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+      </script>
   </body>
 </html>
