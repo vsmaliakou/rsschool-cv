@@ -31,10 +31,23 @@
           <img src="assets/images/photo400px.jpg" alt="photo" />
         </figure>
         <div class="background"></div>
+        <div class="burger-button" onclick="myFunction()"></div>
+        <nav class="burger-menu" id="burger-menu">
+          <ul>
+            <li><a href="#aboutMyself">About Myself</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#code">Code</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#languages">Languages</a></li>
+          </ul>
+        </nav>
       </header>
       <main class="main">
         <div class="column-one">
-          <section>
+          <section id="aboutMyself">
             <h3>ABOUT MYSELF</h3>
             <p>
               I have experience building an application using React with
@@ -43,7 +56,7 @@
               the future I see myself as a Full Stack developer
             </p>
           </section>
-          <section class="contact">
+          <section class="contact" id="contact">
             <h3>CONTACT INFO</h3>
             <ul>
               <li>+375292700376</li>
@@ -52,7 +65,7 @@
               <li>Belarus, Rahachow</li>
             </ul>
           </section>
-          <section class="skills">
+          <section class="skills" id="skills">
             <h3>SKILLS</h3>
             <ul>
               <li>React / Redux</li>
@@ -62,7 +75,7 @@
               <li>Material UI / Ant Design</li>
             </ul>
           </section>
-          <section>
+          <section id="code">
             <h3>CODE</h3>
             <pre>
               <code class="js">
@@ -76,23 +89,35 @@
               </code>
             </pre>
           </section>
-          <section>
+          <section id="projects">
             <h3>PROJECTS</h3>
             <div>
-              <a href="https://rolling-scopes-school.github.io/vsmaliakou-JSFEPRESCHOOL/museum/" target="_blank">
+              <a
+                href="https://rolling-scopes-school.github.io/vsmaliakou-JSFEPRESCHOOL/museum/"
+                target="_blank"
+                data-tooltip="Louvre - one of the largest and most popular art museums in the world."
+              >
                 <img class="project-image" src="assets/images/museum.jpg" alt="museum" />
               </a>
-              <a href="https://rolling-scopes-school.github.io/vsmaliakou-JSFEPRESCHOOL/drum-kit/" target="_blank">
+              <a
+                href="https://rolling-scopes-school.github.io/vsmaliakou-JSFEPRESCHOOL/drum-kit/"
+                target="_blank"
+                data-tooltip="Drum Kit simulates the most realistic drum playing experience."
+              >
                 <img class="project-image" src="assets/images/drum.jpg" alt="drum-kit" />
               </a>
-              <a href="https://rolling-scopes-school.github.io/vsmaliakou-JSFEPRESCHOOL/photofilter/" target="_blank">
+              <a
+                href="https://rolling-scopes-school.github.io/vsmaliakou-JSFEPRESCHOOL/photofilter/"
+                target="_blank"
+                data-tooltip="Photo filter is used to add a variety of tones and special effects to an image."
+              >
                 <img class="project-image" src="assets/images/photofilter.jpg" alt="photofilter" />
               </a>
             </div>
           </section>
         </div>
         <div class="column-two">
-          <section>
+          <section id="experience">
             <h3 class="section-title">EXPERIENCE</h3>
             <article>
               <h4>
@@ -123,15 +148,13 @@
               <p class="description">Interaction with databases</p>
             </article>
           </section>
-          <section>
+          <section id="education">
             <h3 class="section-title">EDUCATION</h3>
             <article>
               <h4>
                 <span class="date">07.2021 - pr.time</span>The Rolling Scopes School
               </h4>
-              <p class="description">
-                JS / Front-end (<a href="https://app.rs.school/certificate/aanlvamh">Certificate</a>)
-              </p>
+              <p class="description">JS / Front-end (<a href="https://app.rs.school/certificate/aanlvamh">Certificate</a>)</p>
             </article>
             <article>
               <h4><span class="date">01 - 06.2021</span>IT-INCUBATOR</h4>
@@ -139,7 +162,8 @@
             </article>
             <article>
               <h4>
-                <span class="date">2019 - 2021</span>HARBIN INSTITUTE OF TECHNOLOGY, CHINA</h4>
+                <span class="date">2019 - 2021</span>HARBIN INSTITUTE OF TECHNOLOGY, CHINA
+              </h4>
               <p class="description">Аpplied economics</p>
             </article>
             <article>
@@ -149,7 +173,7 @@
               <p class="description">Automotive industry</p>
             </article>
           </section>
-          <section>
+          <section id="languages">
             <h3 class="section-title">LANGUAGES</h3>
             <p>English: pre-intermediate (in progress)</p>
           </section>
@@ -158,14 +182,20 @@
       <footer class="footer">
         2021
         <nav>
-          <a href="https://github.com/vsmaliakou">
-            <img class="ghlogo" src="github-logo.png" alt="github logo"/>
-          </a>
-          <a href="https://rs.school/js/">
-            <img class="rsslogo" src="https://rs.school/images/rs_school_js.svg" alt="rsschool logo"/>
-          </a>
+          <a href="https://github.com/vsmaliakou"><img class="ghlogo" src="github-logo.png" alt="github logo" /></a>
+          <a href="https://rs.school/js/"><img class="rsslogo" src="https://rs.school/images/rs_school_js.svg" alt="rsschool logo" /></a>
         </nav>
       </footer>
     </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("burger-menu");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>
