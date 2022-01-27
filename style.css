@@ -167,10 +167,6 @@ section {
   border-bottom: 3px solid rgb(63, 57, 57);
 }
 
-.column-one section:nth-child(4) {
-  border-bottom: none;
-}
-
 .project-image {
   width: 110px;
   height: 130px;
@@ -252,4 +248,8 @@ section h4 {
 .rsslogo {
   width: 64px;
   margin: 10px;
+}
+
+#languages {
+  border-bottom: none;
 }
