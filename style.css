@@ -167,7 +167,7 @@ section {
   border-bottom: 3px solid rgb(63, 57, 57);
 }
 
-.column-one section:nth-child(5) {
+.column-one section:nth-child(4) {
   border-bottom: none;
 }
 
